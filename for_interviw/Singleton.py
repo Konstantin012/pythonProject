@@ -8,7 +8,7 @@ class WebDriver:
 
     class __WebDriver:
         def __init__(self):
-            servise = Service("C:\\Users\\KoS\\PycharmProjects\\pythonProject\\for_interviw\\chromedriver.exe")
+            servise = Service("for_interviw/chromedriver.exe")
             self.driver = webdriver.Chrome(service=servise)
 
     driver = None
@@ -20,7 +20,7 @@ class WebDriver:
 
 
 def website_opener():
-    driver = WebDriver().driver
+    d = WebDriver().driver
     # driver.get('https://google.com')
     driver2 = WebDriver().driver
 
